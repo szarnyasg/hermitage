@@ -1,0 +1,8 @@
+---
+header-includes:
+- |
+  ```{=latex}
+  \setlength{\tabcolsep}{8pt}
+  \usepackage{xltxtra}
+  ```
+---
