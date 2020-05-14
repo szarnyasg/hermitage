@@ -33,7 +33,7 @@ cause application bugs. The precise definitions of these anomalies are given in 
 |               | "repeatable read"            | snapshot isolation     | ✓  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓  | ✓        | —       | —    |
 |               | "serializable"               | serializable           | ✓  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓  | ✓        | ✓       | ✓    |
 |               |                              |                        |    |     |     |     |     |     |    |          |         |      |
-| MySQL/InnoDB  | "read uncommitted"           | read uncommitted       | ✓  | —   | —   | —   | —   | —   | —  | —        | —       | —    |
+| MySQL/ InnoDB  | "read uncommitted"           | read uncommitted       | ✓  | —   | —   | —   | —   | —   | —  | —        | —       | —    |
 |               | "read committed"             | monotonic atomic view  | ✓  | ✓   | ✓   | ✓   | ✓   | —   | —  | —        | —       | —    |
 |               | "repeatable read" *          | monotonic atomic view  | ✓  | ✓   | ✓   | ✓   | ✓   | R/O | —  | R/O      | —       | —    |
 |               | "serializable"               | serializable           | ✓  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓  | ✓        | ✓       | ✓    |
@@ -52,7 +52,7 @@ cause application bugs. The precise definitions of these anomalies are given in 
 
 Legend:
 
-* * = default configuration
+* `*` = default configuration
 * ✓ = isolation level prevents this anomaly from occurring
 * — = isolation level does not prevent this anomaly, so it can occur
 * R/O = isolation level prevents this anomaly in a read-only context, but when you perform writes,

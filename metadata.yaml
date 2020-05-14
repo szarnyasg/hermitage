@@ -1,8 +1,10 @@
 ---
+title: 'Hermitage: Testing transaction isolation levels'
+author: Martin Kleppmann
 header-includes:
 - |
   ```{=latex}
-  \setlength{\tabcolsep}{8pt}
+  \setlength{\tabcolsep}{7pt}
   \usepackage{xltxtra}
   ```
 ---
